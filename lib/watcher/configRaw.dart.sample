@@ -1,0 +1,21 @@
+final Map<String, String> config = {
+  "email": '',
+  "password": '',
+  "session-userId": '',
+  "session-accessToken": '',
+  "session-accessToken-date": '',
+  "session-refreshToken": '',
+  "session-refreshToken-date": '',
+  "User-Agent": "TGTG/19.12.0 (724) (Android/Unknown; Scale/3.00)",
+  "pollingIntervalInMs": '30000',
+  "authenticationIntervalInMS": '3600000',
+  "console-enabled": 'true',
+  "console-clear": 'true',
+  "showUnchanged": 'false',
+  "showDecrease": 'false',
+  "showDecreaseToZero": 'false',
+  "showIncrease": 'false',
+  "showIncreaseFromZero": 'true'
+  'timer_seconds': '',
+  'timer_minutes': ''
+};
