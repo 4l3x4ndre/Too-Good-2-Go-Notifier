@@ -1,13 +1,14 @@
-# Too Good To Go Notifier
+# Too Good 2 Go Notifier
 
 This repository is the code of an mobile application that informs you periodically if your favorite businesses from your Too Good To Go account have available items.
 If so, it sents you a notification.
 The app needs to be open constantly.
 
-📱 The app is available here : _link not active yet_
+📱 The app is available here : https://play.google.com/store/apps/details?id=fr.amrani.alexandre.app.tgtg_tracker
 
 ☕ Buy me a coffe : https://paypal.me/4l3x4ndre
 
+### Tgtg screenshots
 ![Screenshot image](screenshots.jpg)
 
 ## Getting Started
