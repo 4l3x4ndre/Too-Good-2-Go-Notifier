@@ -44,9 +44,9 @@ class Notifier {
       showNotification("Go on Too Good To Go now!",
           "We found some cool products for you, check them out on Too Good To Go!");
 
-      msg = 'We find this that might be good for you:\n';
+      msg = 'We find this that might be good for you:\n\n';
       for (var b in businessesToShow) {
-        msg += '- ' + b.toString();
+        msg += '' + b.toString();
         if (b != businessesToShow[businessesToShow.length - 1]) {
           msg += ', ' + '\n\n';
         } else {
@@ -54,9 +54,9 @@ class Notifier {
         }
       }
     } else {
-      msg = 'Nothing in sight yet.';
+      msg =
+          'No items are available. We will check back soon.\nCome back later!';
     }
-
     return msg;
   }
 

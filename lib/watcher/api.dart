@@ -92,7 +92,7 @@ class Api {
     final String sessionUserId = await getSession("session-userId");
 
     http.Response response = await http.post(
-      url + '/item/v4/',
+      url + '/item/v5/',
       headers: <String, String>{
         "Content-Type": "application/json",
         "Accept": "application/json",
@@ -122,7 +122,7 @@ class Api {
       return false;
     }
 
-    // Set user's information from GlobalConf plugin
+    // Set user's information from storage plugin
     config.setConfig('session-userId',
         loginjson["startup_data"]["user"]["user_id"].toString());
     config.setConfig('session-accessToken', loginjson['access_token']);

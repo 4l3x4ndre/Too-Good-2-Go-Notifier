@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   // Get textfields value
-  void setIdentifiers() {
+  void setIdentifiers() async {
     updateErrorText('');
     if (emailController != null &&
         emailController.text != null &&
@@ -69,7 +69,9 @@ class _LoginPageState extends State<LoginPage> {
 
   // Check if account's information is valid
   void verifyAccountInformation(login, password) async {
+    updateErrorText('Checking...');
     bool success = await Api().login();
+    updateErrorText('Result: ' + success.toString());
     if (success) {
       Navigator.pushAndRemoveUntil(
         context,

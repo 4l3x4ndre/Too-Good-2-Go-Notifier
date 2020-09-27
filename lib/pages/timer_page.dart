@@ -61,6 +61,7 @@ class _TimerPageState extends State<TimerPage> {
     config.setConfig('timer_minutes', hours.toString());
     stopTimer();
     setState(() {
+      info = 'Loading...';
       timer = Timer.periodic(
           Duration(seconds: minutes * 60, minutes: hours * 60),
           (Timer t) => fetchAtEndOfTimer());
@@ -120,7 +121,8 @@ class _TimerPageState extends State<TimerPage> {
                 ),
                 title: Text('Rate the app'),
                 onTap: () {
-                  _launchURL('https://play.google.com/store');
+                  _launchURL(
+                      'https://play.google.com/store/apps/details?id=fr.amrani.alexandre.app.tgtg_tracker');
                 },
               ),
               ListTile(
@@ -221,7 +223,7 @@ class _TimerPageState extends State<TimerPage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  info ?? 'Nothing yet.',
+                  info == '' || info == null ? 'Loading' : info,
                   style: TextStyle(
                       color: lightColor,
                       fontWeight: FontWeight.bold,
